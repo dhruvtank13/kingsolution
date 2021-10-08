@@ -9,14 +9,34 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white"><span>What We DO</span></a>
+        <%= link_to '', class: 'nav-link openpopup',style:"color:white",id:'whatwedo', remote: true do %>
+          What We DO
+        <%end%>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white"><span>Technology</span></a>
+        <%= link_to '', class: 'nav-link openpopup',style:"color:white",id:'technology', remote: true do %>
+          Technology
+        <%end%>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white"><span>About Us</span></a>
+        <%= link_to '', class: 'nav-link openpopup',style:"color:white",id:'about_us', remote: true do %>
+          About Us
+        <%end%>
       </li>
     </ul>
   </div>
 </nav>
+<script>
+  $(document).ready(function(){
+    $(".openpopup").on('click', function(){
+      $.ajax({
+        url: "/open_popup",
+        type: 'GET',
+        data: {
+          id: $(this).attr('id')
+        },
+        dataType: "script",
+      });
+    });
+  });
+</script>

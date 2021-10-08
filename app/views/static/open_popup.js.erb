@@ -1,0 +1,10 @@
+<%if @id == "whatwedo"%>
+  $("#partial_division").html("<%= escape_javascript(render partial: 'whatwedo') %>");
+  $('#what_we_do_model').modal('show');
+<%elsif @id == "technology"%>
+  $('#partial_division').html("<%= escape_javascript(render partial: 'technology') %>");
+  $('#technology_model').modal('show');
+<%elsif @id == "about_us"%>
+  $("#partial_division").html("<%= escape_javascript(render partial: 'about_us') %>");
+  $('#aboutus_model').modal('show');
+<%end%>

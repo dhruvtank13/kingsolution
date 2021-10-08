@@ -19,4 +19,15 @@
      background: #180438;
  }
 
- 
+ .footer_override {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    height: 650px;
+    width: 100%;
+}
+
+.icon_font_size{
+    font-size: 20px;
+}

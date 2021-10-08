@@ -19,9 +19,19 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
+gem 'font_awesome5_rails'
+
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pg'
+gem 'jquery-rails'
+gem 'select2-rails', '~> 4.0', '>= 4.0.3'
+gem 'croppie_rails'
+gem 'ckeditor'
+gem 'cocoon'
+gem 'dropzonejs-rails'
+
+gem 'ajax-datatables-rails', git: 'https://github.com/vivekmiyani/ajax-datatables-rails.git'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
